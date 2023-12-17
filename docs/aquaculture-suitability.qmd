@@ -403,7 +403,7 @@ total_suitable_area_plot <- ggplot() +
   theme_minimal() +
   # update axes labels, titles
   labs(title = "Total Area Suitable for Oyster Aquaculture",
-       subtitle = "by West Coast Environmental Economic Zones (EEZs)",
+       subtitle = "by West Coast Exclusive Economic Zones (EEZs)",
        fill = bquote("Suitable Area (km"^{2}~")" ),
        x = "Longitude",
        y = "Latitude") +
@@ -472,7 +472,7 @@ pct_suitable_plot <- ggplot() +
   ) +
   theme_minimal() +
   labs(title = "Percentage Area Suitable for Oyster Aquaculture",
-       subtitle = "by West Coast Environmental Economic Zones (EEZs)",
+       subtitle = "by West Coast Exclusive Economic Zones (EEZs)",
        # using bquote() for mathematical notation 
      #  fill =("Percentage suitable area (%)"),
        x = "Longitude",
@@ -633,7 +633,7 @@ suitability_mapper <- function(min_temp, max_temp, min_depth, max_depth, species
     theme_minimal() +
     # update axes labels, titles
     labs(title = paste("Suitable Area for", species_name, "Aquaculture"),
-         subtitle = "by West Coast Environmental Economic Zones (EEZs)",
+         subtitle = "by West Coast Exclusive Economic Zones (EEZs)",
          fill = bquote("Total suitable area (km"^{2}~")" ),
          x = "Longitude",
          y = "Latitude") +
