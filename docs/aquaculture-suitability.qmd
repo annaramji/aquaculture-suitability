@@ -4,6 +4,7 @@ author: "Anna Ramji"
 format: 
   html:
     code-fold: true
+    toc: true
 ---
 
 
@@ -411,7 +412,10 @@ total_suitable_area_plot <- ggplot() +
                                   family = "Futura",
                                   face = "bold",
                                   size = 16),
-        plot.subtitle = element_text(family = "Futura"),
+        plot.subtitle = element_text(family = "Futura",
+                                     face = "plain",
+                                     size = 10,
+                                     vjust = 0.5),
         legend.box.margin =  margin(l = 0.5, unit = "cm"),
         legend.title = element_text(family = "Futura",
                                     hjust = -1,
@@ -482,7 +486,7 @@ pct_suitable_plot <- ggplot() +
                                     ),
         plot.subtitle = element_text(family = "Futura",
                                      face = "plain",
-                                     size = 8,
+                                     size = 10,
                                      vjust = 0.5), 
 
         legend.box.margin =  margin(l = 0.5, unit = "cm"),
@@ -628,7 +632,7 @@ suitability_mapper <- function(min_temp, max_temp, min_depth, max_depth, species
     # custom theme
     theme_minimal() +
     # update axes labels, titles
-    labs(title = paste("Suitable Area for", species_name, "aquaculture"),
+    labs(title = paste("Suitable Area for", species_name, "Aquaculture"),
          subtitle = "by West Coast Environmental Economic Zones (EEZs)",
          fill = bquote("Total suitable area (km"^{2}~")" ),
          x = "Longitude",
