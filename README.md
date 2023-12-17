@@ -2,12 +2,7 @@
 
 Analyzing coastal areas per West Coast Exclusive Economic Zones for aquaculture suitability for oysters and other species. Includes function development for analyzing and plotting suitability by total area and percentage area by EEZ.
 
-**Author:**
-
-Anna Ramji
-
--   [GitHub](https://github.com/a-ramji)
--   [Website](https://a-ramji.github.io/)
+**Author:** Anna Ramji | [GitHub](https://github.com/a-ramji) | [Website](https://a-ramji.github.io/)
 
 ![](figs/oyster-aquaculture-image.jpeg)
 
